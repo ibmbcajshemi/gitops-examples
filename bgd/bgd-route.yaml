@@ -1,17 +1,17 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  creationTimestamp: null
   labels:
     app: bgd
-  name: bgd
+    argo.cntk/instance: bgd
+  name: route-bgd
   namespace: bgd
 spec:
-  host: ""
+  host: route-bgd-bgd.apps.ocp-663001ouoh-e67d.cloud.techzone.ibm.com
   port:
     targetPort: 8080
   to:
     kind: Service
     name: bgd
     weight: 100
-status: {}
+  wildcardPolicy: None
