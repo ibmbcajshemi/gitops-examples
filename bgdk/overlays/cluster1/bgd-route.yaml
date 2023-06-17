@@ -1,3 +1,3 @@
 - op: replace
   path: /spec/host
-  value: "ocp-663001ouoh-e67d.cloud.techzone.ibm.com"
+  value: "apps.ocp-663001ouoh-e67d.cloud.techzone.ibm.com"
